@@ -34,6 +34,20 @@ return store1Data;
 }
 store1();
 
+function storeList1(){
+var list= document.getElementById('list1');
+var node = document.createElement('li');
+for(i=0; i<=hours.length+(1); i++){
+var node = document.createElement('li');
+var textnode =document.createTextNode(store1Data[i]);
+node.appendChild(textnode);
+
+document.getElementById('list1').appendChild(node);
+};
+}
+storeList1();
+
+
 //Portland Airport
 var store2Data =["Portland Airport"];
 function store2(){
@@ -48,6 +62,20 @@ console.log(store2Data);
 return store2Data;
 }
 store2();
+
+function storeList2(){
+var list= document.getElementById('list1');
+var node = document.createElement('li');
+for(i=0; i<=hours.length+(1); i++){
+var node = document.createElement('li');
+var textnode =document.createTextNode(store2Data[i]);
+node.appendChild(textnode);
+
+document.getElementById('list2').appendChild(node);
+};
+}
+storeList2();
+
 
 //Washington Square
 var store3Data =["Washington Square"];
@@ -64,6 +92,20 @@ return store3Data;
 }
 store3();
 
+function storeList3(){
+var list= document.getElementById('list1');
+var node = document.createElement('li');
+for(i=0; i<=hours.length+(1); i++){
+var node = document.createElement('li');
+var textnode =document.createTextNode(store3Data[i]);
+node.appendChild(textnode);
+
+document.getElementById('list3').appendChild(node);
+};
+}
+storeList3();
+
+
 //Sellwood
 var store4Data =["Sellwood"];
 function store4(){
@@ -78,6 +120,20 @@ console.log(store4Data);
 return store4Data;
 }
 store4();
+
+function storeList4(){
+var list= document.getElementById('list1');
+var node = document.createElement('li');
+for(i=0; i<=hours.length+(1); i++){
+var node = document.createElement('li');
+var textnode =document.createTextNode(store4Data[i]);
+node.appendChild(textnode);
+
+document.getElementById('list4').appendChild(node);
+};
+}
+storeList4();
+
 
 //Pearl District
 var store5Data =["Pearl District"];
@@ -94,30 +150,15 @@ return store5Data;
 }
 store5();
 
+function storeList5(){
+var list= document.getElementById('list1');
+var node = document.createElement('li');
+for(i=0; i<=hours.length+(1); i++){
+var node = document.createElement('li');
+var textnode =document.createTextNode(store5Data[i]);
+node.appendChild(textnode);
 
-
-function  table(){
-  for (i=0; i<stores.length; i++){
-    var node=document.createElement("tr");
-};
-  for (i=0; i<=hours.length; i++){
-    var node=document.createElement("td");
-    var textnode=document.createTextNode(store1Data[i]);
-    node.appendChild(textnode);
-    document.getElementById("list").appendChild(node);
+document.getElementById('list5').appendChild(node);
 };
 }
-table();
-
-function  table1(){
-  for (i=0; i<stores.length; i++){
-    var node=document.createElement("tr");
-};
-  for (i=0; i<=hours.length; i++){
-    var node=document.createElement("td");
-    var textnode=document.createTextNode(store2Data[i]);
-    node.appendChild(textnode);
-    document.getElementById("list").appendChild(node);
-};
-}
-table1();
+storeList5();
