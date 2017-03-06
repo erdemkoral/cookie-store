@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Salmon Cookie Store</title>
+  <title>Salmon Cookie Shop</title>
   <link rel="stylesheet" href="cookie.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Rancho|Roboto:100i" rel="stylesheet">
 </head>
 <body>
-    <div id='header'>
-    <h1>Salmon Cookie Store</h1>
+  <header>
+    <div id='logo'>
+      <a>Est.2017</a><br>
+      Salmon Cookie Shop<br>
+      <a>_____ Portland _____</a>
     </div>
-      <div id='content'>
-        <div id="images_hz">
-          <img src="hot-cocoa-cookies.jpg" alt="hot chocolate cookie" />
-          <img src="OrangeCookie.jpg" alt=" orange fish cookie" />
-          <img src="powedercookie.jpg" alt="poeder cookie" />
-        </div>
-        <div id='feature'>
-          <p>Icing ice cream sweet. Cotton candy topping chupa chups cake gummies. Soufflé chupa chups chupa chups. Liquorice cake biscuit pie bear claw. Liquorice jujubes brownie cotton candy gummies bonbon jelly cake croissant. Wafer pudding topping croissant. Marzipan jelly-o halvah sugar plum caramels sweet roll chupa chups lemon drops candy. Liquorice lollipop cupcake cake dragée sugar plum. Cheesecake chocolate bar ice cream macaroon bear claw. Chocolate cake jujubes. Powder powder candy. Pie brownie pie sweet roll soufflé. Topping icing oat cake candy carrot cake donut lollipop.</p>
-        </div>
-        <div class="article column1">
-            <p>Sugar plum powder toffee tart jelly-o sesame snaps lemon drops cotton candy. Chupa chups marshmallow jelly beans toffee tart candy cotton candy tart. Chocolate bar topping muffin dessert danish jelly beans wafer. Toffee sweet roll dragée marshmallow candy canes pudding. Wafer fruitcake danish sweet jelly beans icing. Jelly beans dragée bonbon danish sweet gummi bears tart halvah. Cake lemon drops croissant sweet roll tart. Biscuit sweet bonbon cookie liquorice cake. Chocolate halvah cake candy canes tiramisu tootsie roll. Tiramisu jelly cupcake chocolate bar chocolate cake cookie gummies..</p>
-          </div>
-          <div class='article column2'>
-            <p>Croissant danish sweet roll toffee. Candy brownie danish gummies candy brownie pastry tart apple pie. Chocolate bar cheesecake soufflé biscuit. Croissant chupa chups muffin brownie macaroon bonbon bonbon icing sugar plum. Fruitcake caramels gingerbread caramels muffin marzipan. Dragée caramels marzipan gummies ice cream. Cupcake danish ice cream dessert powder sweet roll chupa chups caramels jelly. Cotton candy cookie soufflé. Muffin bear claw cake topping cake toffee icing jelly cupcake.</p>
-          </div>
-          <div class='article column3'>
-            <p>Toffee I love candy liquorice marzipan chupa chups oat cake. Candy sweet roll liquorice jujubes gummies marshmallow sweet roll. Tiramisu chocolate bar jelly-o pie danish sweet soufflé. Lollipop biscuit jelly beans sugar plum jelly-o cotton candy gingerbread cupcake pastry. Brownie muffin carrot cake chupa chups. Jelly icing jelly-o pastry muffin gummies. Wafer I love wafer cookie tootsie roll bear claw. Toffee cake biscuit.</p>
-          </div>
-      </div>
-
-      <table id="tableDom">
-      </table>
-      <form id="newStore">
-        <label>Store Name:</label> <input type = "text" id="NewName"><br>
-        <label>Minimum Number of Customers:</label> <input type = "text" id="NewMinCusNo"><br>
-        <label>Maximum Number of Customers:</label> <input type = "text" id="NewMaxCusNo"><br>
-        <label>Average Number of Cookies:</label> <input type = "text" id="NewAvgNoCookie"><br>
-        <input type="button" value="Submit" onclick="createNewStore()">
+    <div id='nav'>
+      <dl>
+        <li><a>HOME</a></li>
+        <li><a>ABOUT</a></li>
+        <li><a>GALLERY</a></li>
+        <li><a>CONTACT</a></li>
+      </dl>
+    </div>
+  </header>
+ <div id="imgBox">
+    <img src="coffee.jpg" alt="coffee">
+    <p>"Soufflé soufflé chocolate cake. Biscuit brownie chocolate wafer chocolate cake tiramisu cookie topping. Gingerbread gummi bears dragée marzipan donut gingerbread."</p>
+  </div>
+  <div id="content">
+    <table id="tableDom">
+    </table>
+    <form id="newStore">
+      <fieldset><legend>Add New Store</legend>
+      <label>Store Name:</label> <input type = "text" id="NewName"><br>
+      <label>Minimum Number of Customers:</label> <input type = "text" id="NewMinCusNo"><br>
+      <label>Maximum Number of Customers:</label> <input type = "text" id="NewMaxCusNo"><br>
+      <label>Average Number of Cookies:</label> <input type = "text" id="NewAvgNoCookie"><br>
+      <input class="btn" type="button" value="Submit" onclick="createNewStore()">
+    </fieldset>
     </form>
-
-
-      <div id='footer'>
-        <p>&copy; 2017 SalmonCookies.com</p>
-      </div>
+  </div>
+</body>
 <script type="text/javascript" src="cookie.js"></script>
 </body>
 </html>

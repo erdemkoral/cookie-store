@@ -71,6 +71,7 @@ for(var storeIndex = 0; storeIndex < storesData.length; storeIndex++){
     tableData.textContent = storeToUse[index];
     tableRow.appendChild(tableData);
   }
+  
 table.appendChild(tableRow);
 }
 }
