@@ -38,6 +38,7 @@ function createNewStore(){
   var newStore = new Store(name, minCusNo, maxCusNo, avgNoCookie);
   storesData.push(newStore.storeData());
   createTable();
+  
 }
 
 var storesData = [];
@@ -71,7 +72,7 @@ for(var storeIndex = 0; storeIndex < storesData.length; storeIndex++){
     tableData.textContent = storeToUse[index];
     tableRow.appendChild(tableData);
   }
-  
+
 table.appendChild(tableRow);
 }
 }
